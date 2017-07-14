@@ -1,7 +1,11 @@
+import os.path
 import sys
 import shutil
 import requests
 import json
+
+if not os.path.isfile('login_data.json'):
+	print "login_data.json not detected, Please run kaggle_login.py"
 
 login_url = 'https://www.kaggle.com/account/login'
 download_url = sys.argv[1]
