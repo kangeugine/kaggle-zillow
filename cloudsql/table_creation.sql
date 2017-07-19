@@ -21,7 +21,7 @@ CREATE TABLE  IF NOT EXISTS Train
   parcelid int,
   logerror float,
   transactiondate varchar(255),
-  PRIMARY KEY parcelid
+  PRIMARY KEY (parcelid)
 );
 
 
