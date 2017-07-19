@@ -1,3 +1,3 @@
 #!/bin/bash
-gcloud sql instances patch rentals \
+gcloud sql instances patch kaggle \
     --authorized-networks `wget -qO - http://ipecho.net/plain`
